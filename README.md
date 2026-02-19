@@ -4,65 +4,65 @@
 
 ---
 
-## 📁 Repository Structure
+## 📁 Files
 
-```
-ruby-rails-guide/
-├── ruby-fundamentals/
-│   ├── 01_basics.md              # Syntax, data types, variables
-│   ├── 02_oop.md                 # Classes, modules, mixins
-│   ├── 03_blocks_procs_lambdas.md
-│   ├── 04_collections.md        # Array, Hash, Enumerable
-│   ├── 05_metaprogramming.md    # method_missing, define_method, etc.
-│   ├── 06_concurrency.md        # Threads, Fibers, Ractors
-│   └── 07_design_patterns.md
-├── ruby-on-rails/
-│   ├── 01_mvc_architecture.md
-│   ├── 02_active_record.md      # ORM, queries, associations
-│   ├── 03_action_controller.md  # Controllers, callbacks, filters
-│   ├── 04_action_view.md        # Templates, helpers, forms
-│   ├── 05_routing.md
-│   ├── 06_active_job.md         # Background jobs
-│   ├── 07_action_mailer.md
-│   ├── 08_action_cable.md       # WebSockets
-│   ├── 09_api_mode.md
-│   └── 10_testing.md            # RSpec, Minitest
-├── version-differences/
-│   ├── ruby_versions.md         # Ruby 2.x → 3.x changes
-│   └── rails_versions.md        # Rails 5 → 7/8 changes
-├── interview-prep/
-│   ├── ruby_questions.md
-│   ├── rails_questions.md
-│   ├── system_design.md
-│   └── coding_challenges.md
-└── examples/
-    ├── blog_app_walkthrough.md
-    └── api_app_walkthrough.md
-```
+| File | Topic | Difficulty |
+|---|---|---|
+| [01_basics.md](01_basics.md) | Ruby syntax, data types, variables, control flow | ⭐ |
+| [02_oop.md](02_oop.md) | Classes, modules, mixins, inheritance | ⭐⭐ |
+| [03_blocks_procs_lambdas.md](03_blocks_procs_lambdas.md) | Blocks, Procs, Lambdas, closures | ⭐⭐⭐ |
+| [04_collections.md](04_collections.md) | Array, Hash, Enumerable | ⭐⭐ |
+| [05_metaprogramming.md](05_metaprogramming.md) | method_missing, define_method, open classes | ⭐⭐⭐⭐ |
+| [06_concurrency_and_patterns.md](06_concurrency_and_patterns.md) | Threads, Fibers, design patterns | ⭐⭐⭐ |
+| [01_mvc_architecture.md](01_mvc_architecture.md) | Rails MVC, request lifecycle, CLI | ⭐⭐ |
+| [02_active_record.md](02_active_record.md) | ORM, queries, associations, N+1, callbacks | ⭐⭐⭐ |
+| [05_routing.md](05_routing.md) | RESTful routes, nested, namespaces, API | ⭐⭐ |
+| [10_testing.md](10_testing.md) | RSpec, FactoryBot, mocking, system tests | ⭐⭐⭐ |
+| [ruby_versions.md](ruby_versions.md) | Ruby 2.3 → 3.4 changes with examples | ⭐⭐ |
+| [rails_versions.md](rails_versions.md) | Rails 5 → 8 changes with examples | ⭐⭐ |
+| [ruby_questions.md](ruby_questions.md) | Ruby interview Q&A | ⭐⭐⭐ |
+| [rails_questions.md](rails_questions.md) | Rails interview Q&A | ⭐⭐⭐ |
+| [coding_challenges.md](coding_challenges.md) | Common coding challenges with solutions | ⭐⭐⭐ |
+| [system_design.md](system_design.md) | System design, performance, security | ⭐⭐⭐⭐ |
+| [blog_app_walkthrough.md](blog_app_walkthrough.md) | Full blog app example tying it all together | ⭐⭐⭐ |
 
 ---
 
 ## 🚀 Quick Start
 
-- **New to Ruby?** → Start with [`ruby-fundamentals/01_basics.md`](ruby-fundamentals/01_basics.md)
-- **Know Ruby, learning Rails?** → Start with [`ruby-on-rails/01_mvc_architecture.md`](ruby-on-rails/01_mvc_architecture.md)
-- **Interview prep?** → Go straight to [`interview-prep/`](interview-prep/)
-- **Version migration?** → Check [`version-differences/`](version-differences/)
+- **New to Ruby?** → Start with [01_basics.md](01_basics.md)
+- **Know Ruby, learning Rails?** → Start with [01_mvc_architecture.md](01_mvc_architecture.md)
+- **Interview prep?** → Start with [ruby_questions.md](ruby_questions.md) and [rails_questions.md](rails_questions.md)
+- **Version migration?** → Check [ruby_versions.md](ruby_versions.md) and [rails_versions.md](rails_versions.md)
+- **Coding challenges?** → [coding_challenges.md](coding_challenges.md)
 
 ---
 
-## 🎯 Key Topics at a Glance
+## 🎯 Key Topics
 
-| Topic | File | Difficulty |
-|---|---|---|
-| Ruby Basics | ruby-fundamentals/01_basics.md | ⭐ |
-| OOP & Modules | ruby-fundamentals/02_oop.md | ⭐⭐ |
-| Blocks/Procs/Lambdas | ruby-fundamentals/03_blocks_procs_lambdas.md | ⭐⭐⭐ |
-| Metaprogramming | ruby-fundamentals/05_metaprogramming.md | ⭐⭐⭐⭐ |
-| ActiveRecord Deep Dive | ruby-on-rails/02_active_record.md | ⭐⭐⭐ |
-| Rails 7 vs Rails 6 | version-differences/rails_versions.md | ⭐⭐ |
-| Interview Q&A | interview-prep/ruby_questions.md | ⭐⭐⭐ |
+### Ruby Core
+- **Basics** — syntax, types, symbols, ranges, truthiness
+- **OOP** — classes, inheritance, modules, mixins, duck typing
+- **Blocks/Procs/Lambdas** — closures, yield, differences (most tested in interviews!)
+- **Collections** — Array, Hash, Enumerable methods
+- **Metaprogramming** — method_missing, define_method, open classes, hooks
+- **Concurrency** — Threads, Fibers, design patterns (Singleton, Builder, Observer...)
+
+### Ruby on Rails
+- **MVC** — architecture, request lifecycle, conventions, CLI commands
+- **ActiveRecord** — migrations, validations, associations, N+1 fixes, transactions
+- **Routing** — RESTful, nested, custom, namespaces, API versioning
+- **Testing** — RSpec, FactoryBot, request specs, mocks, Capybara
+
+### Version Differences
+- **Ruby 2.3 → 3.4** — safe navigation `&.`, pattern matching, keyword arg changes, Data class, `it` block param
+- **Rails 5 → 8** — ActionCable, Active Storage, Hotwire, Solid Queue/Cache, auth generator
+
+### Interview Prep
+- Ruby and Rails Q&A with code examples
+- Coding challenges (Two Sum, LRU Cache, FizzBuzz, Fibonacci...)
+- System design (multi-tenancy, search, background jobs, security)
 
 ---
 
-*Last updated: 2025 — Covers Ruby 3.x and Rails 7/8*
+*Covers Ruby 3.x and Rails 7/8 — updated 2025*
